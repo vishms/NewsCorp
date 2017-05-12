@@ -13,6 +13,20 @@ inputFile=$1
 propertyFile=$2                                                                                                                                                         
 outputFile=$3
 
+#check if input file is valid                                                                                                                                    
+if [ ! -f $inputFile ]                                                                                                                                                  
+then                                                                                                                                                                    
+echo "input file is not a valid file. Script Terminating.."                                                                                                             
+exit
+fi
+
+#check if property file is valid                                                                                                                                     
+if [ ! -f $propertyFile ]                                                                                                                                                  
+then                                                                                                                                                                    
+echo "property file is not a valid file. Script Terminating.."                                                                                                             
+exit
+fi
+
 #source the property file to set the properties                                                                                                                         
 source $propertyFile                                                                                                                                                    
                                                                                                                                                                         
@@ -26,6 +40,8 @@ then
 echo "output file can not be created. Script terminating!!"                                                                                                             
 exit                                                                                                                                                                    
 fi
+
+
 
 #read the file line by line and replace the tokens if necessary
 # and write the transformed line to output                                                                                                       
