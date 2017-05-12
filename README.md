@@ -8,5 +8,5 @@ Task 1: Java
 Tast 2: Bash
 replaceTokens.sh script is provided as solution.
 Execute it in following format:
-./replaceTokens.sh <inputFile> <propertyFile> <outputFile>
+./replaceTokens.sh < inputFile > < propertyFile > < outputFile >
 where all files are given with absolute or relative path including file name
