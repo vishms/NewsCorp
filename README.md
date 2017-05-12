@@ -10,3 +10,4 @@ Tast 2: Bash
 * Execute it in following format:
 * ./replaceTokens.sh < inputFile > < propertyFile > < outputFile >
 * where all files are given with absolute or relative path including file name
+* Appropriate validations are done against input files
